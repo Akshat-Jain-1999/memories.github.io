@@ -1,0 +1,464 @@
+*{margin: 0;padding: 0;}
+.top{
+  text-align: right;
+}
+
+.top i{
+  color: grey;
+  
+  border: 2px solid grey;
+  padding: 7px;
+  border-radius: 50%;
+  transition: 0.3s ease-out;
+  margin: 10px;
+}
+
+.top i:hover{
+  color: blue;
+  border: 2px solid blue;
+  
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.dropdown:hover{
+  cursor: pointer;
+}
+.dropdown ul li{
+  float: left;
+} 
+ul{
+  list-style: none;
+}
+.dropdown ul li ul li{
+  padding: 3px;
+  position: absolute;
+}
+.dropdown ul li ul{
+  display: none;
+}
+
+.dropdown:hover ul li ul{
+  display: flex;
+  flex-direction: column;
+  
+}
+.home-body{
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  min-width: 350px;
+}
+.fr-body{
+  background-image: url(../images/friends/friends.jpg);
+  background-size: cover;
+  font-family: cursive;
+}
+.man-body{
+  background-color: rgba(27, 31, 32, 0.85);
+  font-family: 'Acme', sans-serif;
+  font-weight: 100;
+}
+.luck-body{
+    font-family: 'Pacifico',sans-serif;
+}
+.portfolio-items-wrapper{
+  font-family: cursive;
+}
+a{
+  text-decoration: none;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+  font-family:  'Lato', sans-serif;
+}
+
+.left-side {
+  display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  color: black !important;
+}
+
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+  color: black;
+}
+
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+  margin: 0;
+  
+}
+
+.portfolio-img-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.img-text-wrapper .subtitle {
+  transition: 0.5s;
+  color: transparent;
+}
+
+.image-blur {
+  transition: 0.5s;
+  filter: brightness(20%);
+}
+
+.img-text-wrapper:hover .subtitle {
+  color: lightseagreen;
+  font-weight: 600;
+}
+
+.logo-wrapper img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper{
+    display: inline;
+    margin: auto;
+}
+.profile-image-wrapper img {
+  width: 100%;
+  height: auto;
+    width: 250px;
+    /* margin-left: 200px; */
+    border-radius: 8px;
+}
+.profile-image-wrapper img:hover{
+  box-shadow: 18px 18px 18px #888888;
+  transform:translate(10px,-10px);
+  transition: 0.5s ease-out;
+  cursor: pointer;
+}
+.profile-content-wrapper {
+  padding-right: 30px;
+  font-family: cursive;
+}
+
+.profile-content-wrapper h1 {
+  color: lightseagreen;
+  padding: 16px 0;
+}
+
+@media screen and (max-width: 750px){
+
+  .two-column-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  /* .portfolio-item-wrapper{
+    width: 50%;
+  } */
+  .portfolio-items-wrapper{
+    display: inline;
+  }
+  /* .profile-image-wrapper{
+    display: inline;
+    margin: auto;
+  } */
+  .profile-image-wrapper img{
+    height: auto;
+    width: 30%;
+    margin-left: 33%;
+  }
+  .profile-content-wrapper{
+    padding: 0 20px;
+  }
+  .nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+}
+.footer{
+  position: absolute;
+  text-transform: center;
+  bottom: 0;
+  color: #5f1515;
+}
+/* songs.css */
+
+
+
+.songs{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+
+.songs a{
+    margin: 20px;
+    border-radius: 28px;
+    font-size: 100%;
+    text-decoration: none;
+    padding: 20px;
+    font-family: 'Kaushan Script', cursive;
+    background-color: blanchedalmond;
+    /* margin: 21px; */
+    color: #c58686;
+    /* min-width: 33%; */
+    text-align: center;
+}
+.songs a:hover{
+  /* background-color: blue; */
+  color: #5f1515;
+  font-weight: 400;
+  border: 2px solid #5f1515;
+  box-shadow: 18px 18px 18px #888888;
+  transform:translate(5px,-5px);
+  transition: 0.2s ease-out;
+  font-weight: bold;
+}
+.heading{
+  font-size: 150%;
+  line-height: 100px;
+  background-color: antiquewhite;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #5f1515
+}
+
+.back-btn{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+.bg-image{
+  display: flex;
+  margin-bottom: 10%;
+  align-items: center;
+  justify-content: center;
+}
+.bg-image img{
+  border-radius: 10px;
+}
+.bg-image img:hover{
+  box-shadow: 15px 15px 15px grey;
+  transition: 0.5s ease-in;
+}
+.back-btn a{
+  align-items: center;
+  text-decoration: none;
+  /* width: 150px; */
+  line-height: 29px;
+  text-align: center;
+  /* border: 1px solid grey; */
+  color: #000000;
+  border-radius: 10px;
+  background-color: #dadada;
+  padding: 10px;
+  box-shadow: 10px 10px 10px #888888;
+  
+}
+.back-btn a:hover{
+  transform:translate(5px,-5px);
+  border: 2px solid gray;
+  transition: 0.2s ease-out;
+  font-weight: bold;
+}
+
+footer{
+  background-color: antiquewhite;
+  height: 1%;
+  padding-top: 44px;
+}
+
+.social a{
+  color: grey;
+  border: 2px solid grey;
+  width: 45px;
+  height: 41px;
+  padding-top: 5px;
+  margin: -20px 25px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  box-shadow: 10px 10px 10px #888888;
+  transition: 0.3s ease-out;
+  text-align: center;
+}
+
+.social a:hover{
+  transform:translateY(-10px);
+  color: blue;
+  border: 2px solid blue;
+}
+
+@media screen and (max-width:620px){
+
+  .songs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 70%;
+    margin: 11px 83px;
+  }
+  .heading{
+    font-size: 100%;
+  }
+  .bg-image img{
+    width: 250px;
+    height: auto;
+  }
+}
+/* songs.css ends */
+
+/* friends css */
+
+video{
+    border: none;
+    width: 75%;
+    height: auto;
+    margin-left: 12%;
+    margin-bottom: 7%;
+    border-radius: 40px;
+}
+.fr-foot{
+  text-align: center; 
+  background-color: none;
+  color: beige;
+}
+.fr-h1{
+  text-align:center; 
+  margin: 75px; 
+  color:beige;
+}
+
+@media screen and (max-width:600px){
+  .fr-h1{
+  margin: 25px;
+  margin-bottom: 50px;
+  font-size: 150%;
+  } 
+  .video{
+    border-radius: 15px;
+  }
+}
+/* friends css ends */
+
+/* Manali styles */
+
+.man-body h2{
+  text-align: center; 
+  line-height: 1.4; 
+  color: white; 
+  margin: 50px;
+  word-spacing: 0.5em;
+  font-weight: 100;
+}
+
+.maindiv{
+  display: flex;
+  width: 60%;
+  height: 500px;
+  background-image: url(../images/manali/manali1.jpeg);
+  background-size: cover;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 1px 2px 10px 5px white;
+  animation: slider 50s infinite linear;
+}
+
+@keyframes slider{
+  
+  0%{background-image: url(../images/manali/manali2.jpeg);}
+  10%{background-image: url(../images/manali/manali3.jpeg);}
+  20%{background-image: url(../images/manali/manali4.jpeg);}
+  30%{background-image: url(../images/manali/manali5.jpeg);}
+  40%{background-image: url(../images/manali/manali6.jpeg);}
+  50%{background-image: url(../images/manali/manali7.jpeg);}
+  60%{background-image: url(../images/manali/manali8.jpeg);}
+  70%{background-image: url(../images/manali/manali9.jpeg);}
+  80%{background-image: url(../images/manali/manali10.jpeg);}
+  90%{background-image: url(../images/manali/manali1.jpeg);}
+}
+
+.text-large{
+  text-align: center;
+  font-size: 200%;
+  color: aliceblue;
+  font-family: 'Pacifico', cursive;
+}
+@media screen and (max-width:600px){
+  .man-body h2{
+    margin: 20px;
+    font-size: 110%;
+  }
+  .maindiv{
+    width: 81%;
+    height: 251px;
+  }
+}
+/* Manali Style ends */

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sketches</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        h1{
+            padding: 50px;
+        }
+        .wrap{
+            margin-top: 150px;
+            margin-bottom: 200px;
+            perspective: 2500px;
+            perspective-origin: 50% 50%;
+        }
+        .cube{
+            transform-style: preserve-3d;
+            width: 500px;
+            height: 500px; 
+            margin: auto;
+            position: relative;
+            animation: loop 10s linear infinite;
+        }
+        .cube img{
+            position: absolute;
+            opacity: 0.8;
+        }
+
+        .cube:hover{
+            animation-play-state: paused;
+            cursor: pointer;
+        }
+        body{
+            background-color: #bfbfbf;
+            font-family: 'Kaushan Script', cursive;
+        }
+        .cube img:nth-child(1){
+            transform: rotateY(0deg) translateZ(250px);
+        }
+        .cube img:nth-child(2){
+            transform: rotateY(90deg) translateZ(250px);
+        }
+        .cube img:nth-child(3){
+            transform: rotateY(180deg) translateZ(250px);
+        }
+        .cube img:nth-child(4){
+            transform: rotateY(-90deg) translateZ(250px);
+        }
+        .cube img:nth-child(5){
+            transform: rotateX(90deg) translateZ(250px);
+        }
+        .cube img:nth-child(6){
+            transform: rotateX(-90deg) translateZ(250px);
+        }
+
+        .back-btn{
+        text-align: center;
+        padding-top: 101px;
+        padding-bottom: 301px;
+    }
+
+    .back-btn a{
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        padding: 14px;
+        border-radius: 5px;
+        transition: 0.3s ease-out;
+        font-size: large;
+    }
+
+    .back-btn a:hover{
+        border: 2px solid black;
+        font-weight: bolder;
+        box-shadow: 10px 10px 10px grey;
+    }
+
+    .fam-foot{
+        text-align: center;
+    }
+
+    .social a{
+  color: grey;
+  border: 2px solid grey;
+  width: 45px;
+  height: 41px;
+  padding-top: 5px;
+  margin: -20px 25px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  margin-bottom: 13px;
+  box-shadow: 10px 10px 10px #888888;
+  transition: 0.3s ease-out;
+  text-align: center;
+}
+
+.social a:hover{
+  transform:translateY(-10px);
+  color: blue;
+  border: 2px solid blue;
+}
+
+        @keyframes loop{
+            from{
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            to{
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+        @media screen and (max-width: 950px){
+h1{
+  font-size: 125%;
+  padding-top: 10px;
+  padding: 20px;
+}
+
+.social a{
+  color: #6d6565;
+    border: 2px solid #6d6565;
+  font-size: small;
+  width: 34px;
+    height: 31px;
+}
+.back-btn a{
+  font-size: medium;
+}
+
+.wrap{
+            margin-top: 100px;
+            margin-bottom: 100px;
+            perspective: 1000px;
+        }
+.cube{
+            width: 200px;
+            height: 200px; 
+        }
+        .cube img{
+            width: 200px;
+            height: 200px;
+        }
+        .cube img:nth-child(1){
+            transform: rotateY(0deg) translateZ(100px);
+        }
+        .cube img:nth-child(2){
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .cube img:nth-child(3){
+            transform: rotateY(180deg) translateZ(100px);
+        }
+        .cube img:nth-child(4){
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        .cube img:nth-child(5){
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .cube img:nth-child(6){
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="intro-fam">
+        <h1 style="text-align: center;">"It is only by drawing often, drawing everything, drawing incessantly, that one fine day you discover, to your surprise, that you have rendered something in its true character."<br> -Camille Pissarro<br><br><br>You can see some of my sketches in 3D cube animation. To stop the animation just hover the cube.</h1>
+    </div><br><br>
+    <div class="wrap">
+        <div class="cube">
+            <img src="../images/sketch/s1.jpeg" alt="">
+            <img src="../images/sketch/s2.jpeg" alt="">
+            <img src="../images/sketch/s6.jpeg" alt="">
+            <img src="../images/sketch/s4.jpeg" alt="">
+            <img src="../images/sketch/s5.jpeg" alt="">
+            <img src="../images/sketch/s3.jpeg" alt="">
+        </div>
+    </div>
+
+    <div class="back-btn">
+        <a href="../index.html">Back to Memories</a>
+      </div>
+
+
+    <div style="font-size: medium;" class="fam-foot">
+        Connect to me:<br><br><br>
+        <div class="social">
+            <a href="https://www.instagram.com/the_akshat_jain/"><i class="fa fa-instagram fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/akshat-jain-446696188/"><i class="fa fa-linkedin fa-2x"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100008565219108"><i class="fa fa-facebook fa-2x"></i></a>
+        </div>
+        Copyright &copy; www.mymemories.com 2020 - All rights reserved
+    </div>
+    <script src="https://kit.fontawesome.com/87390cb8ac.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>

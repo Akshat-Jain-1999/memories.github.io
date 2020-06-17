@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+.carousel{
+    transform: translateY(-150px);
+    height: 700px;
+    perspective: 500px;
+}
+
+.carousel .carousel-item{
+    width: 700px;
+}
+
+.carousel .carousel-item img{
+    width: 100%;
+    height: 180%;
+    border-radius: 5px;
+}
+
+.up{
+    transform: translateY(-129px);
+}
+h2{
+    color: ivory;
+    padding: 20px 70px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.social a{
+    padding-bottom: 36px;
+}

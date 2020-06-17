@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <title>Hostel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+        body{
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: black;
+            min-width: 100vw;
+            font-family: 'Satisfy', cursive;
+        }
+        .container1{
+            /* width: 1110px; */
+            display: flex;
+            justify-content: space-between;
+            margin-left: 10%;
+            margin-right: 10%;
+            /* transform: translateY(254px); */
+        }
+        .container1 img{
+            max-width: 350px;
+            transform-origin: center;
+            transform: perspective(800px) rotateY(30deg);
+            transition: 0.5s;
+            -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0007);
+        }
+
+        .container1:hover img{
+            opacity: 0.2;
+        }
+        .container1 img:hover{
+            transform: perspective(800px) rotateY(0deg);
+            transform: scale(1.2);
+            opacity: 1;
+        }
+
+        .container2{
+            /* width: 1110px; */
+            display: flex;
+            justify-content: space-between;
+            /* transform: translateY(254px); */
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 250px;
+        }
+        .container2 img{
+            max-width: 350px;
+            transform-origin: center;
+            transform: perspective(800px) rotateY(30deg);
+            transition: 0.5s;
+            -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0007);
+        }
+
+        .container2:hover img{
+            opacity: 0.2;
+        }
+        .container2 img:hover{
+            transform: perspective(800px) rotateY(0deg);
+            transform: scale(1.2);
+            opacity: 1;
+        }
+
+
+        .back-btn{
+        text-align: center;
+        padding-top: 101px;
+        padding-bottom: 301px;
+    }
+
+    .back-btn a{
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        padding: 14px;
+        border-radius: 5px;
+        transition: 0.2s ease-out;
+        font-size: large;
+    }
+
+    .back-btn a:hover{
+        border: 2px solid white;
+        font-weight: bolder;
+        box-shadow: 10px 10px 10px grey;
+    }
+
+    .fam-foot{
+        text-align: center;
+    }
+
+    .social a{
+  color: grey;
+  border: 2px solid grey;
+  width: 45px;
+  height: 41px;
+  padding-top: 5px;
+  margin: -20px 25px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  margin-bottom: 13px;
+  box-shadow: 10px 10px 10px #888888;
+  transition: 0.3s ease-out;
+  text-align: center;
+}
+
+.social a:hover{
+  transform:translateY(-10px);
+  color: blue;
+  border: 2px solid blue;
+  box-shadow: 10px 10px 10px blue;
+}
+html{
+    scroll-behavior: smooth;
+}
+.top{
+  text-align: right;
+}
+
+.top i{
+  color: grey;
+  
+  border: 2px solid grey;
+  padding: 7px;
+  border-radius: 50%;
+  transition: 0.3s ease-out;
+  margin: 10px;
+}
+
+.top i:hover{
+  color: blue;
+  border: 2px solid blue;
+  
+}
+
+@media screen and (max-width: 950px){
+.social a{
+  color: #6d6565;
+    border: 2px solid #6d6565;
+  font-size: small;
+  width: 34px;
+    height: 31px;
+}
+.back-btn a{
+  font-size: medium;
+}
+.container1{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 img{
+    margin:100px 100px;
+}
+
+.container2 img{
+    margin:100px 100px;
+}
+
+h1{
+  font-size: 150% !important;
+  padding-top: 10px;
+  padding: 20px;
+  padding-bottom: 0;
+  line-height: 150%;
+  padding-top: 77px;
+}
+}
+    </style>
+</head>
+<body>
+    <div style="text-align:center; color: blanchedalmond;">
+        <h1 style="font-size: 250%; padding: 20px; text-align: center;padding-top: 77px;">Hostel life is a free life. In a hostel, a student is free from the cares and worries of everyday. He can concentrate fully on his studies. In a hostel, a student mixes up with different types of students. He becomes well-mannered and cultured. He learns how to behave in society. He acquires good virtues and becomes a good citizen. He is able to increase his knowledge and remove his weaknesses. He interacts with other students and is no shyer. He learns to speak fluently and confidently. One should avoid bad company in a hostel. Hostel life is a memorable period of one’s whole life.</h1>
+    </div><br><br><br><br><br>
+    <div style="display: block;" class="block">
+        <div class="container1">
+            <img src="../images/hostel/h1.jpeg" alt="">
+            <img src="../images/hostel/h2.jpeg" alt="">
+            <img src="../images/hostel/h3.jpeg" alt="">
+        </div>
+        <div class="container2">
+            <img src="../images/hostel/h4.jpeg" alt="">
+            <img src="../images/hostel/h5.jpeg" alt="">
+            <img src="../images/hostel/h6.jpeg" alt="">
+        </div>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <div class="back-btn">
+            <a href="../index.html">Back to Memories</a>
+          </div>
+    
+    
+        <div style=" color: white; font-size: medium;" class="fam-foot">
+            Connect to me:<br><br><br>
+            <div class="social">
+                <a href="https://www.instagram.com/the_akshat_jain/"><i class="fa fa-instagram fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/akshat-jain-446696188/"><i class="fa fa-linkedin fa-2x"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100008565219108"><i class="fa fa-facebook fa-2x"></i></a>
+            </div>
+            Copyright &copy; www.mymemories.com 2020 - All rights reserved
+            <div style="display: inline;" class="top">
+                <a href="#top"><i class="fa fa-arrow-up fa-2x"></i></a>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/87390cb8ac.js" crossorigin="anonymous"></script>
+
+    </div>
+
+</body>
+</html>

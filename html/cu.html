@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My College</title>
+    <link rel="stylesheet" href="../cucss/slicebox.css">
+    <link rel="stylesheet" href="../cucss/demo.css">
+    <link rel="stylesheet" href="../cucss/custom.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <script src="../js/modernizr.custom.46884.js"></script>
+</head>
+<body>
+    <h2 id="h1">The campus consists of 18 academic blocks, 6 girls and 14 boys hostel buildings, food courts, banks, free university dispensaries, stationery shops, and departmental stores. The campus also holds the boxing court, badminton court, basketball court, wrestling court, and gymnasiums.<br><br>Various cultural events that take place around the year in the university include CUFest, Abhivyakti National literary Festival, and CU Rhythm International Folklore Festival. CU also backs National Cadet Corps (NCC) National Service Scheme (NSS) and Institutional Social Responsibility (ISR).<br><br>Like all universities in India, CU is recognized by the University Grants Commission (UGC). CU is also a member of the International Association of Universities (IAU) and the Association of Commonwealth Universities (ACU). It was accredited with A+ grade by the National Assessment and Accreditation Council (NAAC) in September 2019.
+
+        Some of the courses are also approved by the All India Council for Technical Education (AICTE), National Council for Hotel Management and Catering Technology (NCHMCT), Bar Council of India (BCI), Pharmacy Council of India (PCI), Council of Architecture (COA) and National Council for Teacher Education (NCTE).</h2>
+    <div style="transform: translateY(22px);"  class="container">
+        <div style="max-width: 90%;" class="wrapper">
+            <ul id="sb-slider" class="sb-slider">
+                <li>
+                    <a href=""><img src="../images/cu/p7.jpg"></a>
+                </li>
+                <li>
+                    <a href=""><img src="../images/cu/p2.jpg"></a>
+                </li>
+                <li>
+                    <a href=""><img src="../images/cu/p3.jfif"></a>
+                </li>
+                <li>
+                    <a href=""><img src="../images/cu/p4.jpg"></a>
+                </li>
+                <li>
+                    <a href=""><img src="../images/cu/p5.jpg"></a>
+                </li>
+                <li>
+                    <a href=""><img src="../images/cu/p6.jpg"></a>
+                </li>
+                <li>
+                    <a href=""><img src="../images/cu/p1.jpg"></a>
+                </li>
+            </ul>
+            <div id="shadow" class="shadow"></div>
+            <div id="nav-arrows" class="nav-arrows">
+                <a href="">Next</a>
+                <a href="">Previous</a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div id="back-btn">
+        <a href="../index.html">Back to Memories</a>
+    </div>
+
+
+    <div class="fr-foot">
+        <p style="font-size: large; font-family: cursive;">Connect to me:<br><br><br></p> 
+        <div class="social">
+            <a href="https://www.instagram.com/the_akshat_jain/"><i class="fa fa-instagram fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/akshat-jain-446696188/"><i class="fa fa-linkedin fa-2x"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100008565219108"><i class="fa fa-facebook fa-2x"></i></a>
+        </div>
+        <p style="font-size: large; font-family: cursive;">Copyright &copy; www.mymemories.com 2020 - All rights reserved</p>
+    </div>
+    <script src="https://kit.fontawesome.com/87390cb8ac.js" crossorigin="anonymous"></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="../js/jquery.slicebox.js"></script>
+    <script>
+
+      $(function(){
+
+        var Page = (function(){
+            var $navArrows = $('#nav-arrows').hide(),
+            $shadow = $('#shadow').hide(),
+            slicebox = $('#sb-slider').slicebox({
+                onReady:function(){
+                    $navArrows.show();
+                    $shadow.show();
+                },
+                orientation:'r',
+                cuboidsRandom: true,
+                disperseFactor:30
+            }),
+
+            init=function(){
+                initEvents();
+            },
+
+            initEvents = function(){
+                $navArrows.children(':first').on('click',
+                function(){
+                    slicebox.next();
+                    return false;
+                });
+
+                $navArrows.children(':last').on('click',
+                function(){
+                    slicebox.previous();
+                    return false;
+                });
+
+            };
+            return { init : init };
+        })();
+
+        Page.init();
+
+      });
+
+
+
+    </script>
+    <!-- <script src="js/jquery.slicebox.min.js"></script> -->
+</body>
+</html>
